@@ -122,7 +122,6 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url("../img/header.jpg");
   color: white; }
   header .header-content {
     position: relative;
