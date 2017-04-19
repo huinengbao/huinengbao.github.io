@@ -32,7 +32,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
 </head>
 
 
@@ -88,7 +88,7 @@
             <hr>
             <p> "慧能宝"是一款基于移动互联网的配用电智能管理服务云平台产品。
         以电力大数据为中心，向各类电能用户开放运行，通过系统自学功能为电能使用者提供经济高效的系统运行和电力能效管理方案。</p>
-            <a href="#about" class="btn btn-primary btn-xl page-scroll">了解更多</a>
+            <a href="#about" class="btn btn-primary btn-xl page-scroll">点击了解更多</a>
         </div>
        </div>
       
@@ -455,7 +455,11 @@
       $('#landingpage').logosDistort(options);
       $('#landingpage').click(function(){
         //   $('#abloutHuiNeng').click();
-        window.location.href="#about";
+        // window.location.href="#about";
+        $('html, body').stop().animate({
+            scrollTop: ($('#about').offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
       });
     });
 </script>
